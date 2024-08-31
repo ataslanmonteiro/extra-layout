@@ -1,29 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Extra-Layout</title>
     <style>
-        .item{
-            background-color: aqua;
-            margin: 10px;
-            padding: 10px;
-            border-radius: 20px;
-            font-size: 15px;
-        }
+      .container {
+        background-color: blue;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 250px;
+      }
+      .item1 {
+        background-color: yellow;
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+        text-align: left;
+      }
+      .item2 {
+        background-color: yellow;
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+        text-align: left;
+      }
+      .container2 {
+        margin-top: 10px;
+        display: grid;
+      }
+      .blocoe {
+        background-color: blue;
+        border-radius: 10px;
+        flex: 7;
+      }
+      .esquerda1 {
+        background-color: yellow;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+      }
+      .esquerda2 {
+        background-color: yellow;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+      }
+      .container3 {
+        display: grid;
+        background-color: aqua;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+      }
+      .item {
+        background-color: aqua;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+      }
     </style>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="container">
-        <div class="item">1</div>
-        <div class="item">1</div>
-        <div class="item">1</div>
-        <div class="item">1</div>
-        <div class="item">1</div>
+      <div class="item1">Logo</div>
+      <div class="item2">Área de busca</div>
     </div>
-    
-       
-</body>
+    <div class="container2">
+      <div class="blocoe">
+        <div class="esquerda1">Esquerda1</div>
+        <div class="esquerda1">Esquerda2</div>
+      </div>
+      <div class="blocod">
+        <div class="">1</div>
+        <div class="">1</div>
+      </div>
+    </div>
+    <div class="container3">
+      <div>Rodapé</div>
+    </div>
+  </body>
 </html>
