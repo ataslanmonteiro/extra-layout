@@ -7,82 +7,151 @@
     <style>
       .container {
         background-color: blue;
+        color: blue;
         border-radius: 10px;
         display: grid;
-        grid-template-columns: auto auto;
-        gap: 250px;
+        grid-template-areas: "header header header header header header header"                                     
       }
-      .item1 {
-        background-color: yellow;
-        flex: 1;
+      .header{
+        grid-area: header;
+      }
+      .logo{
+        grid-area: logo;
+      }
+      .busca{
+        grid-area: busca;
+      }
+      .header{
+        display: grid;
+        grid-gap: 5px 10px;
+        grid-template-areas: "logo espaço espaço espaço espaço espaço busca";
+      }
+      .logo {
+        background-color: yellow;        
         margin: 10px;
         padding: 10px;
         border-radius: 10px;
         font-size: 15px;
         text-align: left;
+        width: 200px;  
       }
-      .item2 {
-        background-color: yellow;
-        flex: 1;
-        margin: 10px;
+      .busca {
+        background-color: yellow;        
+        margin: 10px;              
         padding: 10px;
         border-radius: 10px;
         font-size: 15px;
-        text-align: left;
+        text-align: left;                                        
       }
       .container2 {
+        color: blue;
         margin-top: 10px;
         display: grid;
+        grid-template-columns: 200px auto;
+        gap: 10px;
       }
       .blocoe {
         background-color: blue;
         border-radius: 10px;
-        flex: 7;
+        height: auto;                
       }
-      .esquerda1 {
-        background-color: yellow;
+      .esquerda {
+        background-color: yellow;        
         margin: 10px;
         padding: 10px;
         border-radius: 10px;
         font-size: 15px;
+        height: auto;
       }
-      .esquerda2 {
-        background-color: yellow;
-        margin: 10px;
+      .blocod {
+        background-color: blue;        
         padding: 10px;
+        padding-top: 0;
         border-radius: 10px;
         font-size: 15px;
+        text-align: left;        
       }
+      .primeiro{
+        background-color: blueviolet;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        border-radius: 10px;
+        padding: 5px;
+      }
+      .p{
+        background-color: yellow;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 5px;
+      }
+      .segundo{
+        background-color: yellow;
+        border-radius: 10px;
+        margin-top: 5px;
+        padding: 10px;
+      }
+      .terceiro{
+        background-color: blueviolet;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 5px;
+      }
+      .t{
+        background-color: yellow;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 5px;        
+      }
+      .t2{
+        background-color: yellow;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 5px;
+        margin-right: 0px;   
+      }      
       .container3 {
+        color: blue;
         display: grid;
         background-color: aqua;
         margin-top: 10px;
         padding: 10px;
         border-radius: 10px;
         font-size: 15px;
-      }
-      .item {
-        background-color: aqua;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 10px;
-        font-size: 15px;
-      }
+      }     
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="item1">Logo</div>
-      <div class="item2">Área de busca</div>
+    <div class="header">
+      <div class="logo">Logo</div>
+      <div class="espaço"></div>
+      <div class="busca">Área de busca</div>
+    </div>
     </div>
     <div class="container2">
       <div class="blocoe">
-        <div class="esquerda1">Esquerda1</div>
-        <div class="esquerda1">Esquerda2</div>
+        <div class="esquerda">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="esquerda">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
       </div>
       <div class="blocod">
-        <div class="">1</div>
-        <div class="">1</div>
+        <h3>Conteúdo</h3>
+        <div class="primeiro">
+          <div class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.</div>
+          <div class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.</div>
+          <div class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.</div>
+          <div class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.</div>
+        </div>
+        <div class="segundo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.</div>
+        <div class="terceiro">
+          <div class="t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.</div>
+          <div class="t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.</div>
+          <div class="t2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.</div>                    
+        </div>
+        <div class="segundo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc leo, semper quis faucibus eu, lacinia vel augue.</div>
+        </div>        
+        </div>        
       </div>
     </div>
     <div class="container3">
